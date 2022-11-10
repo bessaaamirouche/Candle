@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+nav{
+    position:fixed;
+    top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#373434;
+    ;
+    width: 80%;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius:40px;
+}
+.liste li {
+    display: inline-block;
+    padding: 32px 40px;
+    color: azure;
+}
+.sec1 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(image/BannièreAmirouche.jpeg);  
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+
+
+}
+.logo{
+height: 45px;
+width: 121px;
+padding-left: 30px;
+}
+.logo img{
+    height: 100%;
+}
