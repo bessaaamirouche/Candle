@@ -1,17 +1,16 @@
 *{
+    font-family: 'Barlow', sans-serif;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     color: white;
-
 }
 body{
     height: 100vh;
     margin: 0 auto;
     max-width: 1440px;    
     background: #101010F0;
-
 }
 nav{
     position:fixed;
@@ -36,8 +35,52 @@ nav{
     background-image: url(image/BannièreAmirouche.jpeg);  
     background-size: 100%;
     background-repeat: no-repeat;
+}
+.sec2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(16,16,16,0.9416141456582633) 0%, rgba(16,16,16,0.938813025210084) 0%),
+    url(image/sec2.jpeg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; 
+}
+.sec3{  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(16, 16, 16, 0.83) 0%, rgba(16, 16, 16, 0.7387) 52.4%, rgba(16, 16, 16, 0.83) 100%), url(image/Background1.jpeg);
+    gap: 1%;
+}
+.sec3 p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+}
+#sv, #smp, #dev, #wd{
+    width: 206px;
+    height: 144px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.card{
+    width: 296px;
+    height: 462px;
+    background: linear-gradient(180deg, #2E2E2F 0%, #101010 25.83%, #2E2E2F 47.19%, #101010 79.48%);
+    display: flex;
+    border-radius: 10px;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 3px 27px 15px #000000;
 
 }
+
 .left{
     display: flex;
     align-items: center;
@@ -45,8 +88,6 @@ nav{
     flex-direction: column;
     width: 50%;
     height: 100%;
-    
-
 }
 .t1{
     text-align: left;
@@ -74,18 +115,6 @@ padding-left: 10%;
     height: 100%;
 }
 
-.sec2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(2,0,36);
-    background: rgb(16,16,16);
-    background: linear-gradient(90deg, rgba(16,16,16,0.9416141456582633) 0%, rgba(16,16,16,0.938813025210084) 0%),
-    url(image/sec2.jpeg);
-    height: 100%;
-    width: 100%;
-    
-}
 .infos{
     height: auto;
     width: 100%;
@@ -110,5 +139,4 @@ padding-left: 10%;
     object-fit: cover;
     filter: brightness(0.80);
     opacity: 0.09;
-
 }
