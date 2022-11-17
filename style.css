@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;600&family=Dancing+Script:wght@600&family=Pacifico&display=swap');
+
 *{
     font-family: 'Barlow', sans-serif;
     margin: 0;
@@ -12,18 +14,21 @@ body{
     max-width: 1440px;    
     background: #101010F0;
 }
-nav{
-    position:fixed;
-    top: 70px;
+
+nav {
+    position: fixed;
+    top: 5%;
+    width: 60%;
+    height: 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:#373434;
-    width: 50%;
+    background-color: #3734344f;
     border-bottom-right-radius: 40px;
-    border-top-right-radius:40px;
-    z-index: 8;
+    border-top-right-radius: 40px;
+    z-index: 2;
 }
+
 .liste li {
     display: inline-block;
     padding: 32px 40px;
@@ -32,7 +37,7 @@ nav{
 .sec1 {
     height: 92%;
     width: 100%;
-    background-image: url(image/BannièreAmirouche.jpeg);  
+    background-image: url(image/BannièreAmirouche.jpeg);  
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -59,13 +64,15 @@ nav{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 15em;
+    width: 80%;
+    color: #FFFFFF99;
+
 }
 #sv, #smp, #dev, #wd{
     width: 206px;
     height: 144px;
-    border: 1px solid white;
     border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.45)
 }
 .card{
     width: 296px;
@@ -80,6 +87,17 @@ nav{
     box-shadow: 1px 3px 27px 15px #000000;
 
 }
+.card h1 {
+    color: #FFFFFF33;
+
+}
+.card a{
+    background: #313132;
+    padding: 6%;
+    border-radius: 8px;
+    color: #FFFFFF99;
+}
+
 
 .left{
     display: flex;
@@ -89,12 +107,17 @@ nav{
     width: 50%;
     height: 100%;
 }
-.t1{
+.t1 h1{
+    margin-bottom: 5%;
+}
+.t1 p{
+    font-weight: 200;
     text-align: left;
-    margin-bottom: 80px;
+    
 }
 .t2{
-    font-size: 25px;
+    border-radius: 8px;
+    font-size: 1.5rem;
     text-align: center;
     background: #393737;
     padding: 20px 29px;
@@ -140,3 +163,147 @@ padding-left: 10%;
     filter: brightness(0.80);
     opacity: 0.09;
 }
+
+footer{
+    width: 100%;
+    height: 149px;
+    display: flex;
+}
+.foot1{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.foot1 a{
+    padding-left: 10px;
+}
+.foot1 img{
+    height: 8px;
+    width: 11px;
+}
+.foot2{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #D9D9D91A;
+}
+.foot2 img{
+    width: 46px;
+    height: 46px;
+    padding: 0 16px ;
+}
+
+@media  screen and (max-width:980px) {
+    .body{
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+         width: 36%;
+         top: 5%;
+         height: 7%;
+         position: absolute;
+         background-color: #3734344f;
+         z-index: 1;
+    }
+    .liste li {
+        display: none;
+        padding: 32px 40px;
+        color: azure;
+        
+    }
+    .sec1{
+        margin: 0;
+        padding: 108px;
+        background-size: cover;
+        background-position: center;
+        height: 66%;
+        width: 100%;
+    }
+    .sec2{
+        padding: 108px;
+        height: auto;
+    }
+ @media  screen and (max-width:414px) {
+  
+    nav {
+         width: 38%;
+         top: 5%;
+         height: 7%;
+         position: absolute;
+         background-color: #3734344f;
+         z-index: 1;
+    }
+    .sec1{
+        height: 50%;
+        width: 100%;
+        position: relative;
+    }
+    .left{
+    margin: 0 auto;
+    height: auto;
+    position: absolute;
+    top: 130px; 
+    left: 30px;
+    }
+    .t1{
+        font-size: 0.5rem;
+    }
+    .sec1 h3{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .sec2{
+        padding: none;
+    }
+
+    .sec3{
+        width: 100%;
+        display: grid;
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    .card{
+        height:100%;
+    }
+    .card h1 {
+        font-size: large;
+        padding: 5px;
+    
+    }
+    .card a{
+        display: none;
+    }
+    .t2{
+        padding: 4px;
+        font-size: 1rem;
+    }
+    .t1 p{
+        padding-bottom: 15%;
+        text-align: center;
+    }
+    .t1 h1{
+        font-size: large;
+        font-weight: 500;
+    }
+    .infos h1{
+        font-size: 24px;
+        margin-top: 8px;
+    }
+    .infos p{
+        font-size: 15px;
+        padding: 0px 15px 0 15px;
+    }
+    .infos a { 
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    }
+ }
+ 
