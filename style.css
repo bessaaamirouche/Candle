@@ -86,11 +86,16 @@ nav {
     align-items: center;
     flex-direction: column;
     box-shadow: 1px 3px 27px 15px #000000;
+    
 
 }
+.card:hover {
+    scale: 1.2;
+    transition: 0.5s ease-out; 
+}
+
 .card h1 {
     color: #FFFFFF33;
-
 }
 .card a{
     background: #313132;
